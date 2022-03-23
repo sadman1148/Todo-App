@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context="ui.Fragments.UpdateTodoFragment">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/dp20"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTodoTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp60"
+            android:layout_marginTop="@dimen/dp20"
+            android:background="@drawable/custom_input"
+            android:inputType="text"
+            android:paddingStart="@dimen/dp10" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/dp20"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/newTodoTime"
+                android:layout_width="@dimen/dp0"
+                android:layout_height="@dimen/dp60"
+                android:layout_weight="1"
+                android:background="@drawable/custom_input"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="@dimen/dp10"
+                android:textSize="@dimen/sp18"
+                app:drawableEndCompat="@drawable/ic_baseline_alarm_24" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <EditText
+            android:id="@+id/editSubtodo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/custom_input"
+            android:clickable="false"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:paddingHorizontal="@dimen/dp10"
+            android:paddingTop="@dimen/dp10" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/updateButton"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/dp10"
+                android:text="@string/update"
+                android:textColor="@color/logo"
+                app:strokeColor="@color/logo" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
